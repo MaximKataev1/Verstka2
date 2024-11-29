@@ -1,0 +1,363 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Raleway;
+    src: url(fonts/Raleway/Raleway-VariableFont_wght.ttf);
+}
+
+header{
+    background: url(img/Group\ 220.png) no-repeat center;
+    width: 1440px;
+    margin: 0 auto;
+}
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+header .container{
+    /* width: 1140px; */
+    height: 900px;
+    /* margin: 0 auto; */
+}
+h2{
+    font-family: Raleway;
+    font-size: 36px;
+    font-weight: normal;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.burger{
+    cursor: pointer;
+}
+
+.line{
+    width: 30px;
+    height: 4px;
+    background-color: white;
+    margin: 5px 0;
+    transition: all 0.3s ease;
+}
+
+header ul{
+    display: flex;
+    gap: 28px;
+}
+
+header ul a{
+    font-size: 18px;
+    color: white;
+    font-family: Raleway;
+    text-decoration: none;
+}
+
+header ul{
+        list-style-type: none;
+        display: flex;
+        gap: 28px;
+}
+
+.logo p{
+    font-size: 60px;
+    justify-content: center;
+    color: white;
+    font-family: Raleway;
+}
+
+.language{
+    display: flex;
+    gap: 20px;
+    font-size: 18px;
+    font-family: Raleway;
+    color: white;
+}
+
+.language img{
+    height: 18px;
+}
+
+.ru{
+    display: flex;
+}
+
+.uah{
+    display: flex;
+}
+
+
+.icons{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.center{
+    margin-top: 310px;
+    text-align: center;
+}
+
+.center p{
+    font-size: 48px;
+    font-family: Raleway;
+    color: white;
+}
+
+.center hr{
+    width: 120px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.center .p{
+    padding-top: 20px;
+    color: white;
+    font-family: Raleway;
+    font-size: 16px;
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+}
+
+.flex img{
+    height: 18px;
+    margin-top: 20px;
+}
+
+.flexbox{
+    display: flex;
+    gap: 15px;
+    padding-top: 50px;
+}
+
+.category {
+    width: 273px;
+    height: 440px;
+}
+.kurtki{
+    background: url(img/Rectangle\ 11.png) no-repeat;
+}
+.palto{
+    background: url(img/Rectangle\ 10.png) no-repeat;
+}
+.shyba{
+    background: url(img/Rectangle\ 7\ \(1\).png);
+}
+.parka{
+    background: url(img/Rectangle\ 9.png);
+}
+
+main .container h2{
+    padding-top: 100px;
+}
+
+.flexbox .button{
+    width: 274px;
+    height: 40px;
+    margin-top: 400px;
+    background-color: #E0BEA2;
+    border: 0;
+    color: white;
+    font-family: Raleway;
+    font-size: 20px;
+}
+
+.next-button{
+    width: 30px;
+    height: 30px;
+}
+
+.podpiska{
+    width: 600px;
+    margin: 0 auto;
+    padding-top: 100px;
+    margin-bottom: 100px;
+}
+
+.podpiska h2{
+    text-align: center;
+}
+
+.podpiska input{
+    margin-top: 50px;
+    width: 600px;
+    height: 50px;
+    text-align: center;
+    font-size: 16px;
+    font-family: Raleway;
+    border-radius: 2px solid black;
+}
+
+.podpiska button{
+    width: 600px;
+    height: 50px;
+    margin-top: 20px;
+    background-color: #E0BEA2;
+    border: 0; 
+    color: white;
+    font-size: 16px;
+    font-family: Raleway;
+}
+
+.podpiska p{
+    margin-top: 20px;
+    text-align: center;
+    font-size: 16px;
+    font-family: Raleway;
+}
+
+footer{
+    padding-bottom: 74px;
+}
+
+.flexinfo{
+    display: flex;
+    justify-content: space-between;
+    font-family: Raleway;
+}
+
+.flexinfo h4{
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+
+.flexinfo p{
+    font-size: 16px;
+    padding-bottom: 10px;
+}
+
+.active .line:nth-child(1){
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.active .line:nth-child(2){
+    opacity: 0;
+}
+
+.active .line:nth-child(3){
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+@media screen and (min-width: 375px) and (max-width: 750px) {
+    header{
+        width: 100%;
+        flex-direction: column;
+        gap: 20px;
+    }
+    header .container {
+        padding: 20px 0;
+    }
+    .container, .podpiska {
+        width: 100%;
+    }
+    .burger{
+        margin-left: 20px;
+        cursor: pointer;
+        display: block;
+        margin: auto 10px;
+        z-index: 2;
+    }
+    .show-menu{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        right: 0;
+        top: 0;
+        padding: 20px;
+        background: #605c57;
+        width: 100%;
+        z-index: 1;
+    }
+    header ul{
+        display: none;
+    }
+    header .logo{
+       position: absolute;
+       left: 50%;
+       right: 50%;
+       top: 20px
+    }
+    header .logo p{
+        font-size: 40px;
+        padding-top: 20px;
+    }
+    .language, .icons {
+        display: none;
+    }
+    .center p{
+        font-size: 40px;
+    }
+    .center hr{
+        color: white;
+    }
+    .kurtki{
+       background-size: 165px;
+       margin-left: 20px;
+       width: 165px;
+    }
+    .palto{
+        background-size: 165px;
+    }
+    .kurtki button{
+        width: 165px;
+        margin-top: 231px;
+    }
+    .palto button{
+        width: 165px;
+        margin-top: 231px;
+    }
+    .flexbox .shyba{
+        display: none;
+    }
+    .flexbox .parka{
+        display: none;
+    }
+
+    .podpiska .p{
+        font-size: 25px;
+        text-align: left;
+        margin-left: 20px;
+    }
+    .podpiska input{
+        width: 335px;
+        margin-left: 15px;
+    }
+    .podpiska button{
+        width: 335px;
+        margin-left: 15px;
+    }
+    .podpiska p{
+        width: 300px;
+        font-size: 16px;
+        margin-left: 35px;
+    }
+    .flexinfo{
+        display: block;
+    }
+    .flexinfo p{
+        display: none;
+    }
+    .flexinfo h4{
+        margin-left: 110px;
+    }
+    .company, .poleznoe, .pokypateli, .kontakti {
+        width: 100%;
+        border-bottom: 1px solid black;
+        padding-left: 20px;
+        padding-top: 20px;
+    }
+    footer{
+        padding-bottom: 100px;
+    }
+}
